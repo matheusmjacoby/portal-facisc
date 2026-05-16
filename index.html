@@ -543,24 +543,9 @@
 
       <div class="card-header">
         <div class="logo-container">
-          <!-- Logo FACISC fiel: letras brancas + símbolo espiral (sobre fundo verde) -->
-          <svg viewBox="0 0 268 68" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:52px;width:auto;">
-            <!-- Letras FACISC brancas -->
-            <text x="0" y="52" font-family="Montserrat,Arial Black,sans-serif" font-weight="900" font-size="56" fill="#FFFFFF" letter-spacing="-1">FACISC</text>
-            <!-- Símbolo: caixa com espiral -->
-            <g transform="translate(212,2)">
-              <!-- fundo da caixa: verde mais claro que o header -->
-              <rect x="0" y="0" width="52" height="62" rx="5" fill="rgba(255,255,255,0.15)"/>
-              <!-- arco externo verde claro -->
-              <path d="M26 8 C40 8 46 20 42 32 C38 43 24 48 12 41" stroke="#7ED957" stroke-width="5.5" stroke-linecap="round" fill="none"/>
-              <!-- arco interno amarelo-ouro -->
-              <path d="M26 17 C34 17 38 24 36 31 C34 37 27 40 20 36" stroke="#FFD700" stroke-width="5" stroke-linecap="round" fill="none"/>
-              <!-- núcleo amarelo -->
-              <circle cx="26" cy="31" r="7" fill="#FFD700"/>
-              <!-- brilho no núcleo -->
-              <circle cx="23.5" cy="28.5" r="3" fill="#7ED957" opacity=".65"/>
-            </g>
-          </svg>
+          <!-- Logo real FACISC -->
+          <img src="data:image/jpeg;base64,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" 
+               alt="FACISC" style="height:48px;width:auto;display:block;" />
         </div>
         <div class="card-subtitle">Portal de Dashboards Institucionais</div>
       </div>
@@ -612,17 +597,8 @@
 
   <nav class="topbar">
     <div class="topbar-logo">
-      <!-- Logo FACISC topbar: verde sobre branco -->
-      <svg viewBox="0 0 268 68" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:34px;width:auto;">
-        <text x="0" y="52" font-family="Montserrat,Arial Black,sans-serif" font-weight="900" font-size="56" fill="#007A3D" letter-spacing="-1">FACISC</text>
-        <g transform="translate(212,2)">
-          <rect x="0" y="0" width="52" height="62" rx="5" fill="#007A3D"/>
-          <path d="M26 8 C40 8 46 20 42 32 C38 43 24 48 12 41" stroke="#7ED957" stroke-width="5.5" stroke-linecap="round" fill="none"/>
-          <path d="M26 17 C34 17 38 24 36 31 C34 37 27 40 20 36" stroke="#FFD700" stroke-width="5" stroke-linecap="round" fill="none"/>
-          <circle cx="26" cy="31" r="7" fill="#FFD700"/>
-          <circle cx="23.5" cy="28.5" r="3" fill="#7ED957" opacity=".65"/>
-        </g>
-      </svg>
+      <img src="data:image/jpeg;base64,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"
+           alt="FACISC" style="height:32px;width:auto;display:block;" />
     </div>
     <div class="topbar-divider"></div>
     <span class="topbar-section">Portal de Dashboards</span>
@@ -675,59 +651,28 @@
   // ═══════════════════════════════════════════════════════════
 
   // Cole a URL do Google Apps Script após publicá-lo
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby43H_84dia5LnIuqdoXjwUleaBrL-tuhD3xWYfgQC-hgBjjQVFeQ-dz9HQX8vY9DfGxQ/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/SEU_SCRIPT_ID_AQUI/exec";
 
   // Dashboards visíveis para TODOS os usuários autenticados.
   // Para restringir por usuário, configure grupos no Apps Script.
   const DASHBOARDS = [
     {
-      title: "Indicadores Gerais",
-      desc: "Visão consolidada dos principais KPIs da Federação.",
-      icon: "📊",
-      color: "#E8F5EE",
-      tag: "Geral",
-      url: "https://SEU-DASHBOARD-1.com"
-    },
-    {
-      title: "Associações Empresariais",
-      desc: "Dados de associados, regionais e evolução da rede.",
-      icon: "🏢",
-      color: "#EEF4FF",
-      tag: "Associativismo",
-      url: "https://SEU-DASHBOARD-2.com"
-    },
-    {
-      title: "Soluções Empresariais",
-      desc: "Performance dos produtos e serviços oferecidos.",
-      icon: "💼",
-      color: "#FFF7E6",
-      tag: "Soluções",
-      url: "https://SEU-DASHBOARD-3.com"
-    },
-    {
-      title: "Projetos & Programas",
-      desc: "Empreender, Voz Única, DEL e outros programas.",
+      title: "Monitoria de Qualidade",
+      desc: "Acompanhamento dos indicadores de qualidade e avaliação das associações empresariais.",
       icon: "🎯",
-      color: "#F0FFF4",
-      tag: "Projetos",
-      url: "https://SEU-DASHBOARD-4.com"
-    },
-    {
-      title: "Financeiro",
-      desc: "Receitas, despesas e prestação de contas.",
-      icon: "💰",
-      color: "#FFF0F0",
-      tag: "Financeiro",
-      url: "https://SEU-DASHBOARD-5.com"
-    },
-    {
-      title: "Eventos & Agenda",
-      desc: "Acompanhamento de eventos e indicadores de presença.",
-      icon: "📅",
-      color: "#F5F0FF",
-      tag: "Eventos",
-      url: "https://SEU-DASHBOARD-6.com"
+      color: "#E8F5EE",
+      tag: "Qualidade",
+      url: "https://matheusmagalhaesfacisc.github.io/monitoria-facisc/"
     }
+    // Adicione novos dashboards aqui no mesmo formato:
+    // ,{
+    //   title: "Nome do Dashboard",
+    //   desc: "Descrição breve.",
+    //   icon: "📊",
+    //   color: "#EEF4FF",
+    //   tag: "Tag",
+    //   url: "https://link-do-dashboard.com"
+    // }
   ];
 
   // ═══════════════════════════════════════════════════════════
