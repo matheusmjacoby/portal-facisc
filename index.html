@@ -675,7 +675,7 @@
   // ═══════════════════════════════════════════════════════════
 
   // Cole a URL do Google Apps Script após publicá-lo
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBN-Pb_xRPpR1nKnkbT1KAQNAUOHUmiJpqM3EGYohtLbKAHU0TbQAM-Hq_MowfCQifOA/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/SEU_SCRIPT_ID_AQUI/exec";
 
   // Dashboards visíveis para TODOS os usuários autenticados.
   // Para restringir por usuário, configure grupos no Apps Script.
@@ -747,11 +747,8 @@
     err.classList.remove("show");
 
     try {
-      const res  = await fetch(SCRIPT_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "login", user, pass })
-      });
+      const url  = SCRIPT_URL + "?user=" + encodeURIComponent(user) + "&pass=" + encodeURIComponent(pass);
+      const res  = await fetch(url, { method: "GET" });
       const data = await res.json();
 
       if (data.ok) {
